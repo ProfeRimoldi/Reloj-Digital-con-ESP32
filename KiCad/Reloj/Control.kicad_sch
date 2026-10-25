@@ -4,6 +4,10 @@
 	(generator_version "10.0")
 	(uuid "603f538a-a6a4-48b5-9e4c-4c3936be41b8")
 	(paper "A4")
+	(title_block
+		(title "Circuito Reloj")
+		(company "Prof. Damián Rimoldi")
+	)
 	(lib_symbols
 		(symbol "74xx:74HC14"
 			(pin_names
@@ -5898,6 +5902,16 @@
 		)
 		(uuid "38b5ec65-ca73-4e1a-8604-983ed22b6a84")
 	)
+	(text "R17 a R23\n330 ohm"
+		(exclude_from_sim no)
+		(at 96.266 80.772 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "41e8fb81-dc73-4304-ab25-bf0a783b3dc1")
+	)
 	(text "PULSADORES"
 		(exclude_from_sim no)
 		(at 87.122 128.524 0)
@@ -5993,6 +6007,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "03479468-653c-4066-ade2-c5c869bc3e9e")
+	)
+	(junction
+		(at 118.11 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0c6f3ee9-f875-4167-9b7b-2db2eab36053")
 	)
 	(junction
 		(at 194.31 59.69)
@@ -6151,12 +6171,6 @@
 		(uuid "94be6f9e-c1b8-46b5-abae-67ba2ba314d6")
 	)
 	(junction
-		(at 118.11 74.93)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "979767ec-1de9-459e-9f87-6ca4cc68224a")
-	)
-	(junction
 		(at 107.95 64.77)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6203,6 +6217,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b1a1d6b9-3452-47d1-9a20-e102287509f8")
+	)
+	(junction
+		(at 76.2 46.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bc4cef79-a3a7-46c0-a221-f0a399a67fd3")
 	)
 	(junction
 		(at 105.41 62.23)
@@ -6412,7 +6432,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 52.07) (xy 76.2 52.07)
+			(xy 73.66 41.91) (xy 76.2 41.91)
 		)
 		(stroke
 			(width 0)
@@ -6652,7 +6672,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 52.07) (xy 76.2 54.61)
+			(xy 76.2 41.91) (xy 76.2 46.99)
 		)
 		(stroke
 			(width 0)
@@ -6849,6 +6869,16 @@
 			(type default)
 		)
 		(uuid "40aed638-f460-4dee-a51e-295c9f6dadd1")
+	)
+	(wire
+		(pts
+			(xy 76.2 46.99) (xy 76.2 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40fc76a6-e17c-4b0b-b74e-9d3e5be2c2d9")
 	)
 	(wire
 		(pts
@@ -7449,6 +7479,16 @@
 			(type default)
 		)
 		(uuid "8c1ec6f6-41f2-46ee-a567-15e2c7078334")
+	)
+	(wire
+		(pts
+			(xy 62.23 46.99) (xy 76.2 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c762d82-7df3-48d6-8073-6b25714c5cfd")
 	)
 	(wire
 		(pts
@@ -8556,7 +8596,7 @@
 	)
 	(global_label "5v"
 		(shape input)
-		(at 74.93 52.07 180)
+		(at 73.66 41.91 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8566,7 +8606,7 @@
 		)
 		(uuid "174f26ea-8e97-4130-b3bf-13f03cb9cdac")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 69.7677 52.07 0)
+			(at 68.4977 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10317,7 +10357,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0ca60b2a-dc25-4ba8-86c8-eead968a4ca2")
-		(property "Reference" "R14"
+		(property "Reference" "R19"
 			(at 92.456 62.992 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10380,7 +10420,7 @@
 		(instances
 			(project "Reloj"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a79cc87c-c7a7-4824-b77c-67a27ebbaf67"
-					(reference "R14")
+					(reference "R19")
 					(unit 1)
 				)
 			)
@@ -10397,7 +10437,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0fb38927-f63e-4a01-8f38-2168844a4fe5")
-		(property "Reference" "C8"
+		(property "Reference" "C3"
 			(at 104.394 150.876 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10461,7 +10501,7 @@
 		(instances
 			(project "Reloj"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a79cc87c-c7a7-4824-b77c-67a27ebbaf67"
-					(reference "C8")
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -10560,7 +10600,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1934d805-f10a-413f-b4e7-c552d4096c5a")
-		(property "Reference" "R23"
+		(property "Reference" "R11"
 			(at 258.064 127.762 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10622,7 +10662,7 @@
 		(instances
 			(project "Reloj"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a79cc87c-c7a7-4824-b77c-67a27ebbaf67"
-					(reference "R23")
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -10827,7 +10867,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "22e710b5-4785-448d-8190-f93d53eec496")
-		(property "Reference" "R17"
+		(property "Reference" "R22"
 			(at 99.06 70.612 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10890,7 +10930,7 @@
 		(instances
 			(project "Reloj"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a79cc87c-c7a7-4824-b77c-67a27ebbaf67"
-					(reference "R17")
+					(reference "R22")
 					(unit 1)
 				)
 			)
@@ -11337,7 +11377,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "354c361c-0610-4abc-8439-d2c0b99e4399")
-		(property "Reference" "C7"
+		(property "Reference" "C2"
 			(at 42.164 181.356 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11401,7 +11441,7 @@
 		(instances
 			(project "Reloj"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a79cc87c-c7a7-4824-b77c-67a27ebbaf67"
-					(reference "C7")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -11418,7 +11458,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "35780677-9428-4463-820b-fd0ed0d93183")
-		(property "Reference" "R18"
+		(property "Reference" "R23"
 			(at 92.456 73.152 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11428,8 +11468,8 @@
 				)
 			)
 		)
-		(property "Value" "R_Small_US"
-			(at 92.71 72.39 90)
+		(property "Value" "330"
+			(at 92.71 77.978 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11481,7 +11521,7 @@
 		(instances
 			(project "Reloj"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a79cc87c-c7a7-4824-b77c-67a27ebbaf67"
-					(reference "R18")
+					(reference "R23")
 					(unit 1)
 				)
 			)
@@ -11793,7 +11833,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3d6c8abe-3aa1-44a3-9e5a-ff876a74d4e0")
-		(property "Reference" "R6"
+		(property "Reference" "R3"
 			(at 26.67 172.7199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11857,7 +11897,7 @@
 		(instances
 			(project "Reloj"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a79cc87c-c7a7-4824-b77c-67a27ebbaf67"
-					(reference "R6")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -12250,7 +12290,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "51198442-3fc6-4906-8939-61af840f73de")
-		(property "Reference" "R21"
+		(property "Reference" "R9"
 			(at 180.594 127.762 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12312,7 +12352,7 @@
 		(instances
 			(project "Reloj"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a79cc87c-c7a7-4824-b77c-67a27ebbaf67"
-					(reference "R21")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -12330,7 +12370,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "53dc540d-17ca-4a30-80b1-c7ec2d6fc20d")
-		(property "Reference" "R20"
+		(property "Reference" "R16"
 			(at 226.06 81.2799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12394,7 +12434,7 @@
 		(instances
 			(project "Reloj"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a79cc87c-c7a7-4824-b77c-67a27ebbaf67"
-					(reference "R20")
+					(reference "R16")
 					(unit 1)
 				)
 			)
@@ -12997,7 +13037,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "640f1832-dba1-4a68-96a9-db617ad679d1")
-		(property "Reference" "R15"
+		(property "Reference" "R20"
 			(at 98.806 65.532 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13060,7 +13100,7 @@
 		(instances
 			(project "Reloj"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a79cc87c-c7a7-4824-b77c-67a27ebbaf67"
-					(reference "R15")
+					(reference "R20")
 					(unit 1)
 				)
 			)
@@ -13077,7 +13117,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "64c877ae-041e-4565-82af-a99329bcd1ad")
-		(property "Reference" "D5"
+		(property "Reference" "D2"
 			(at 161.036 44.196 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13153,7 +13193,7 @@
 		(instances
 			(project "Reloj"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a79cc87c-c7a7-4824-b77c-67a27ebbaf67"
-					(reference "D5")
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -13276,7 +13316,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "66987e1b-7fd1-4485-b0b4-415ce3948016")
-		(property "Reference" "R12"
+		(property "Reference" "R17"
 			(at 92.71 57.658 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13339,7 +13379,7 @@
 		(instances
 			(project "Reloj"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a79cc87c-c7a7-4824-b77c-67a27ebbaf67"
-					(reference "R12")
+					(reference "R17")
 					(unit 1)
 				)
 			)
@@ -13439,7 +13479,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "67030c03-823e-43ba-8719-ac071cc869fc")
-		(property "Reference" "R8"
+		(property "Reference" "R5"
 			(at 88.9 142.2399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13503,7 +13543,7 @@
 		(instances
 			(project "Reloj"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a79cc87c-c7a7-4824-b77c-67a27ebbaf67"
-					(reference "R8")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -13597,7 +13637,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6debf83f-b561-4699-8776-1ee259165b15")
-		(property "Reference" "R25"
+		(property "Reference" "R13"
 			(at 218.694 150.622 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13659,7 +13699,7 @@
 		(instances
 			(project "Reloj"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a79cc87c-c7a7-4824-b77c-67a27ebbaf67"
-					(reference "R25")
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -13786,7 +13826,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "71452a1a-9fc8-45fd-a935-51fe99a030aa")
-		(property "Reference" "R5"
+		(property "Reference" "R2"
 			(at 32.004 145.542 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13848,7 +13888,7 @@
 		(instances
 			(project "Reloj"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a79cc87c-c7a7-4824-b77c-67a27ebbaf67"
-					(reference "R5")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -13865,7 +13905,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "75caf540-429f-46ae-babd-24d58128b219")
-		(property "Reference" "C6"
+		(property "Reference" "C1"
 			(at 42.164 150.876 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13929,7 +13969,7 @@
 		(instances
 			(project "Reloj"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a79cc87c-c7a7-4824-b77c-67a27ebbaf67"
-					(reference "C6")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -14349,7 +14389,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7e7a4b40-31b6-488c-acfd-bfd592751bbf")
-		(property "Reference" "R13"
+		(property "Reference" "R18"
 			(at 99.06 60.452 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14412,7 +14452,7 @@
 		(instances
 			(project "Reloj"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a79cc87c-c7a7-4824-b77c-67a27ebbaf67"
-					(reference "R13")
+					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -14429,7 +14469,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "801155ae-1916-458e-95b5-b6fa766d02c3")
-		(property "Reference" "C9"
+		(property "Reference" "C4"
 			(at 104.394 180.086 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14493,7 +14533,7 @@
 		(instances
 			(project "Reloj"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a79cc87c-c7a7-4824-b77c-67a27ebbaf67"
-					(reference "C9")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -14827,7 +14867,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8402f23b-03f6-484a-b819-de43bcf299be")
-		(property "Reference" "D4"
+		(property "Reference" "D1"
 			(at 161.036 34.036 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14903,7 +14943,7 @@
 		(instances
 			(project "Reloj"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a79cc87c-c7a7-4824-b77c-67a27ebbaf67"
-					(reference "D4")
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -15030,7 +15070,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "85f9042a-e154-4c18-9013-4707677809df")
-		(property "Reference" "R7"
+		(property "Reference" "R4"
 			(at 32.004 176.022 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15092,7 +15132,7 @@
 		(instances
 			(project "Reloj"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a79cc87c-c7a7-4824-b77c-67a27ebbaf67"
-					(reference "R7")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -15241,7 +15281,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "87bc4c15-abbd-4600-b8a6-15e09a6a79e8")
-		(property "Reference" "D2"
+		(property "Reference" "D3"
 			(at 225.806 34.036 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15317,7 +15357,7 @@
 		(instances
 			(project "Reloj"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a79cc87c-c7a7-4824-b77c-67a27ebbaf67"
-					(reference "D2")
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -15335,7 +15375,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "92ecc1aa-b751-4d49-8967-d3d8168c5408")
-		(property "Reference" "R4"
+		(property "Reference" "R1"
 			(at 26.67 142.2399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15399,7 +15439,7 @@
 		(instances
 			(project "Reloj"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a79cc87c-c7a7-4824-b77c-67a27ebbaf67"
-					(reference "R4")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -15684,7 +15724,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9e69b1f2-2b42-4ddc-9cc9-181b955db3f7")
-		(property "Reference" "R26"
+		(property "Reference" "R14"
 			(at 258.064 150.622 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15746,7 +15786,7 @@
 		(instances
 			(project "Reloj"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a79cc87c-c7a7-4824-b77c-67a27ebbaf67"
-					(reference "R26")
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -15763,7 +15803,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9f41f7cb-2c2a-4667-bba5-c2c652618cee")
-		(property "Reference" "R24"
+		(property "Reference" "R12"
 			(at 180.594 150.622 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15825,7 +15865,7 @@
 		(instances
 			(project "Reloj"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a79cc87c-c7a7-4824-b77c-67a27ebbaf67"
-					(reference "R24")
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -16520,7 +16560,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b27feeb0-2c56-4ec8-8943-a441a98d2112")
-		(property "Reference" "D3"
+		(property "Reference" "D4"
 			(at 225.806 44.196 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16596,7 +16636,7 @@
 		(instances
 			(project "Reloj"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a79cc87c-c7a7-4824-b77c-67a27ebbaf67"
-					(reference "D3")
+					(reference "D4")
 					(unit 1)
 				)
 			)
@@ -16690,7 +16730,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ba151b31-0b9a-4c47-bbfd-e7729803563a")
-		(property "Reference" "R16"
+		(property "Reference" "R21"
 			(at 92.456 68.072 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16753,7 +16793,7 @@
 		(instances
 			(project "Reloj"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a79cc87c-c7a7-4824-b77c-67a27ebbaf67"
-					(reference "R16")
+					(reference "R21")
 					(unit 1)
 				)
 			)
@@ -16887,7 +16927,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c1e323dc-7570-40ef-96aa-dbdb6845a5c8")
-		(property "Reference" "R19"
+		(property "Reference" "R15"
 			(at 161.29 81.2799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16951,7 +16991,7 @@
 		(instances
 			(project "Reloj"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a79cc87c-c7a7-4824-b77c-67a27ebbaf67"
-					(reference "R19")
+					(reference "R15")
 					(unit 1)
 				)
 			)
@@ -17111,6 +17151,88 @@
 			(project "Reloj"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a79cc87c-c7a7-4824-b77c-67a27ebbaf67"
 					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 62.23 50.8 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d4387056-f0ca-4653-82e8-b888a76880e5")
+		(property "Reference" "C6"
+			(at 66.04 49.5299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 66.04 52.0699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 63.1952 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 62.23 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 62.23 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8f3f121c-857d-46fa-9283-bbee4319d261")
+		)
+		(pin "2"
+			(uuid "a0e64baa-77f7-44aa-a13f-9979495da388")
+		)
+		(instances
+			(project "Reloj"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a79cc87c-c7a7-4824-b77c-67a27ebbaf67"
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -17486,7 +17608,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e30d713f-5c1c-43f3-8114-a6934173303f")
-		(property "Reference" "R10"
+		(property "Reference" "R7"
 			(at 88.9 171.4499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17550,7 +17672,7 @@
 		(instances
 			(project "Reloj"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a79cc87c-c7a7-4824-b77c-67a27ebbaf67"
-					(reference "R10")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -17644,7 +17766,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ec92d4c8-39cb-4f38-8c82-bd967123aeb8")
-		(property "Reference" "R9"
+		(property "Reference" "R6"
 			(at 94.234 145.542 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17706,7 +17828,7 @@
 		(instances
 			(project "Reloj"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a79cc87c-c7a7-4824-b77c-67a27ebbaf67"
-					(reference "R9")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -17811,7 +17933,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ee9b5b77-ea64-4faf-9279-2753ead32fe4")
-		(property "Reference" "R11"
+		(property "Reference" "R8"
 			(at 94.996 175.006 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17873,7 +17995,7 @@
 		(instances
 			(project "Reloj"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a79cc87c-c7a7-4824-b77c-67a27ebbaf67"
-					(reference "R11")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -17902,7 +18024,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "0.1uF"
 			(at 144.78 166.3699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18253,7 +18375,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f59054ce-1b8b-4265-86fe-d3a716d08b01")
-		(property "Reference" "R22"
+		(property "Reference" "R10"
 			(at 218.694 127.762 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18315,7 +18437,84 @@
 		(instances
 			(project "Reloj"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a79cc87c-c7a7-4824-b77c-67a27ebbaf67"
-					(reference "R22")
+					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 62.23 54.61 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "fb970099-d799-4c08-a7ba-c492f025da12")
+		(property "Reference" "#PWR019"
+			(at 62.23 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 65.786 56.642 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 62.23 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 62.23 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 62.23 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "dc0ebd0e-0063-45cd-9577-7a91f32e7fed")
+		)
+		(instances
+			(project "Reloj"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a79cc87c-c7a7-4824-b77c-67a27ebbaf67"
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
